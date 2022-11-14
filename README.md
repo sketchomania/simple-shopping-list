@@ -1,4 +1,4 @@
-# Shopping List
+# 🛒 Shopping List
 
 ## Get Started
 
@@ -27,12 +27,13 @@ Run project
 npm start
 ```
 
-## Feature
+## 📃 Features
 
 - A simple shopping list app
 - Add items to the list
 - Delete items form the list
 - Clear the input field on submit
+- check for input value
 
 ## Demo
 
@@ -41,7 +42,14 @@ npm start
  <img src="assets/items.jpg"  width="250">
 </div>
 
-## Contributing
+## ⚒️ Upgrade project
+
+```bash
+# upgrade project
+expo-cli upgrade
+```
+
+## ⭐ Contributing
 
 If you'd like to contribute, please fork the repository and make changes as
 you'd like. Pull requests are warmly welcome.
