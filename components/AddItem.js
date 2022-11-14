@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
-  TouchableOpacity,
-} from "react-native";
+import { StyleSheet, Text, View, TextInput, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 const AddItem = ({ title, addItem }) => {
@@ -23,7 +17,7 @@ const AddItem = ({ title, addItem }) => {
         onChangeText={onChangeHandler}
         value={text}
       />
-      <TouchableOpacity
+      <Pressable
         style={styles.btn}
         onPress={() => {
           addItem(text);
@@ -32,7 +26,7 @@ const AddItem = ({ title, addItem }) => {
       >
         <Ionicons name="add" size={28} color="green" />
         <Text style={styles.btnText}>Add Item</Text>
-      </TouchableOpacity>
+      </Pressable>
     </View>
   );
 };
