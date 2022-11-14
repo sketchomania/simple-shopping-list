@@ -21,11 +21,11 @@ const ListItem = ({ item, deleteItem }) => {
 const styles = StyleSheet.create({
   listItem: {
     backgroundColor: "sandybrown",
-    borderBottomWidth: 2,
     borderColor: "#eee",
-    marginHorizontal: 5,
-    marginVertical: 2,
-    padding: 8,
+    marginHorizontal: 14,
+    marginVertical: 3,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
     borderRadius: 12,
   },
   listItemView: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   listItemText: {
-    fontSize: 18,
+    fontSize: 16,
     color: "darkred",
   },
 });

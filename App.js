@@ -32,25 +32,27 @@ const App = () => {
   };
 
   return (
-    <View style={styles.container}>
-      <Header title="🛒 Shopping List..." />
-      <AddItem addItem={addItem} />
-      <FlatList
-        data={items}
-        renderItem={({ item }) => (
-          <ListItem item={item} deleteItem={deleteItem} />
-        )}
-      />
+    <>
       <StatusBar style="auto" />
-    </View>
+      <View style={styles.container}>
+        <Header title="🛒 Shopping List..." />
+        <AddItem addItem={addItem} />
+        <FlatList
+          data={items}
+          renderItem={({ item }) => (
+            <ListItem item={item} deleteItem={deleteItem} />
+          )}
+        />
+      </View>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 60,
-    backgroundColor: 'lightyellow',
+    paddingTop: 25,
+    backgroundColor: "lightyellow",
   },
 });
 

@@ -43,13 +43,18 @@ const styles = StyleSheet.create({
     padding: 8,
     fontSize: 16,
     borderBottomWidth: 1,
+    marginHorizontal: 12,
+    paddingBottom: 2,
   },
   btn: {
     flexDirection: "row",
     backgroundColor: "palegreen",
-    padding: 12,
-    margin: 8,
+    paddingVertical: 6,
+    marginTop: 8,
+    marginHorizontal: 12,
+    marginBottom: 25,
     borderRadius: 8,
+    alignItems: "center",
     justifyContent: "center",
 
     shadowColor: "#000",
@@ -64,7 +69,7 @@ const styles = StyleSheet.create({
   },
   btnText: {
     color: "darkslateblue",
-    fontSize: 20,
+    fontSize: 18,
     textAlign: "center",
   },
 });
